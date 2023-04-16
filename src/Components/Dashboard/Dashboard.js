@@ -4,9 +4,7 @@ import styled from 'styled-components'
 
 function Dashboard() {
   return (
-    <DashboardStyled>
-      
-    </DashboardStyled>
+    <DashboardStyled>Dashboard</DashboardStyled>
   )
 } 
 
