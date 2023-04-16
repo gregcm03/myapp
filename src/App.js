@@ -4,13 +4,25 @@ import green from './img/green.jpg'
 import {MainLayout} from './styles/Layouts'
 import Orb from './Components/Orb/Orb'
 import Navigation from './Components/Navigation/Navigation'
-//import Income from './Components/Income/Income'
-//import Dashboard from './Components/Dashboard/Dashboard';
-//import Expenses from './Components/Expenses/Expenses';
+import Income from './Components/Income/Income'
+import Dashboard from './Components/Dashboard/Dashboard';
+import Expenses from './Components/Expenses/Expenses';
 
 function App() {
   const [active, setActive] = useState(1)
-  
+  const displayData = () => {
+    switch(active){
+      case 1:
+        return <Dashboard />
+      case 2:
+        return <Dashboard />
+      case 3:
+        return <Income />
+      case 4:
+        return <Expenses />
+      default: <Dashboard />
+    }
+  } 
  
   const orbMemo = useMemo(() => {
     return <Orb />
@@ -21,7 +33,7 @@ function App() {
       <MainLayout>
         <Navigation active={active} setActive={setActive} />
         <main>
-          <h1>Hello</h1>
+          {displayData() }
         </main>
       </MainLayout>
     </AppStyled>
