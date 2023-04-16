@@ -11,20 +11,7 @@ import Expenses from './Components/Expenses/Expenses';
 function App() {
   const [active, setActive] = useState(1)
   
-  const displayData = () => {
-    switch(active){
-      case 1:
-        return <Dashboard />
-      case 2:
-        return <Dashboard />
-      case 3:
-        return <Income />
-      case 4:
-        return <Expenses />
-      default:  
-        return <Dashboard />
-    }
-  }
+ 
   const orbMemo = useMemo(() => {
     return <Orb />
   },[])
