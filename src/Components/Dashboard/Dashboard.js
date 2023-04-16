@@ -6,15 +6,14 @@ function Dashboard() {
   return (
     <DashboardStyled>
       <InnerLayout>
-        <h1 style={{ color: 'red' }}>Hello</h1>
+        <h1>Hello</h1>
       </InnerLayout>
     </DashboardStyled>
   )
-}
+} 
 
 const DashboardStyled = styled.div`
-  background-color: lightgray;
-  padding: 2rem;
+
 `;
 
 

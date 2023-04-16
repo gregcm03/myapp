@@ -4,9 +4,9 @@ import green from './img/green.jpg'
 import {MainLayout} from './styles/Layouts'
 import Orb from './Components/Orb/Orb'
 import Navigation from './Components/Navigation/Navigation'
-import Income from './Components/Income/Income'
-import Dashboard from './Components/Dashboard/Dashboard';
-import Expenses from './Components/Expenses/Expenses';
+//import Income from './Components/Income/Income'
+//import Dashboard from './Components/Dashboard/Dashboard';
+//import Expenses from './Components/Expenses/Expenses';
 
 function App() {
   const [active, setActive] = useState(1)
@@ -21,7 +21,7 @@ function App() {
       <MainLayout>
         <Navigation active={active} setActive={setActive} />
         <main>
-          {displayData}
+          <h1>Hello</h1>
         </main>
       </MainLayout>
     </AppStyled>
@@ -41,7 +41,7 @@ const AppStyled = styled.div`
     overflow: auto;
     overflow-x: hidden;
     &::-webkit-scrollbar{
-      width: 0;
+      width: 0;  
     }
   }
 `;
